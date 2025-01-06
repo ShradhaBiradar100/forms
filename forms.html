@@ -1,0 +1,173 @@
+<HTML>
+    <h1>COURSE REGISTRATION FORM
+        <title>Web Development Course</title>
+        <style>
+         body{
+            background: rgb(190,196,227);
+          background: radial-gradient(circle, rgba(190,196,227,1) 0%, rgba(202,200,225,1) 5%, rgba(218,205,223,1) 48%, rgba(221,206,223,1) 59%, rgba(226,208,222,1) 72%, rgba(242,213,219,1) 100%);
+        }
+        input text{
+            font-size: large;
+            font-weight: lighter;
+        }
+    
+         h1{
+            font-size: xx-large;
+            }
+            input:required{
+                border: 2px solid rgb(179, 210, 228);
+            }
+    
+            input:optional{
+                border: 2px solid gray;
+            }
+            select{
+                border: 2px solid black;
+            }
+            textarea{
+                border: 2px solid black;
+                border-radius: 2px;
+            }
+            input[readonly]{
+                background-color: rgb(75, 47, 4);
+                color: rgb(247, 234, 234);
+                font-weight: 600;
+            }
+            select{
+                border-radius: 15px;
+                width: 200;
+                cursor: pointer;
+            }
+    
+        label{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: medium;
+            }
+        legend{
+            font-size: x-large;
+            }
+        input[type="radio"]:checked+label{
+        color:rgb(46, 45, 43);
+        height: 20px;
+        width: 20px;
+            }
+        fieldset{
+            width: 500px;
+            border-radius: 20px;
+            border-width: 3px;
+            border-color: rgb(134, 187, 178);
+            }
+        legend{
+            font-size: large;
+            font-weight: 900;
+        }
+        input:hover{
+            background-color: rgb(235, 178, 178);
+        }
+         input:focus{
+            background-color: rgb(195, 137, 127);
+            color: bisque;
+            font-weight: 600;
+
+       }
+    </style>
+    </h1>
+    <body>
+    <form action="">
+        <fieldset> 
+        <table>
+        <legend>PERSONAL DETAILS</legend>
+        <tr>
+            <td> <Label>NAME</Label></td>
+            <td><input type="text" placeholder="ex:Shradha" name="FN" required></td>
+        </tr>
+    
+        <tr>
+        <td> <label for="">LASTNAME</label></td>
+        <td><input type="text" placeholder="ex:Biradar" name="LN" optional><br></td>
+        </tr>
+    
+        <tr>
+        <td><label for="">MOBILE NUMBER</label></td>
+        <td><input type="tel" placeholder="ex: 9988776655" name="Mob no" required><br></td>
+        </tr>
+    
+        <tr>
+        <td><label for="">Email</label></td>
+        <td><input type="email" placeholder="ex: Shradha1234@gmail.com" name="EM" required><br></td>
+        </tr>
+    
+    <tr>
+        <td><label for="">PASSWORD</label></td>
+        <td><input type="password" name="pwd" placeholder="min 5 characters" size="15" required><br></td>
+    </tr>
+    
+    <tr>
+        <td><label for="">CONFIRM PASSWORD</label></td>
+        <td><input type="password" name="cpwd" placeholder="min 5 characters" size="15" required><br></td>
+    </tr>
+    
+    <tr>
+        <td><label for="">DOB</label></td>
+        <td> <input type="date" name="DOB" required><br></td>
+    </tr>
+    
+    <tr>
+        <td><label for="">GENDER</label></td>
+        <td> <input type="radio" name="GENDER" value="M" required> <label >MALE</label> 
+            <input type="radio" name="GENDER" value="F" required><label >FEMALE</label>
+            <input type="radio" name="GENDER" value="C" required><label >CUSTOME</label> <br></td>
+    </tr>
+    
+    <tr>
+        <td><label for="">SELECT COUNTRY</label></td>
+        <td> <select>
+            <option value="">INDIA</option>
+            <option value="">USA</option>
+            <option value="">CHINA</option>
+        </select><br></td>
+    </tr>
+    
+    <tr>
+        <td><label for="">UPLOAD IMAGE</label></td>
+        <td><input type="file" required><br></td>
+    </tr>
+    
+    <tr>
+       <td><input type="reset"></td> 
+    </tr>
+    </table>
+    </fieldset>
+    
+    <fieldset>
+    <legend>COURSE DETAILS</legend>
+    
+    <tr>
+        <td><label>SELECT COURSE</legend><br></td>
+        <td><select name="COURSE">
+                <option value="PFS">PYTHON FULL STACK</option>
+                <option value="JFS">JAVA FULL STACK</option>
+                <option value="CJ">CORE JAVA</option>
+                <option value="PFS">PYTHON FOR DATASCIENCE</option>
+        </select><br></td>
+    </tr>
+    
+    <tr>
+        <td><label>DELIVERY MODE</label></td>
+        <td><input type="radio" name="MODE " value="ON" id="ON" required><label for="">ONLINE</label>
+            <input type="radio" name="MODE " value="OFF" id="OFF" required><label for="">OFFLINE</label> <br></td>
+    </tr>
+    <label>INSTITUTE NAME </label>
+    <input type="text" value="TAP ACADEMY" readonly><br>
+        
+        <label>COMMENTS</label><br>
+        <textarea rows="5" cols="40" ></textarea>
+    </fieldset>
+    
+    <input type="submit">
+    
+    </form>
+    
+    <button><a href="ED529208.pdf" download="ED529208.pdf">download PDF</a></button>
+    </body>
+    </HTML>
